@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:paddingStart="24dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="32dp">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_close"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_sort_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Urutkan"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_close" />
+
+    <RadioGroup
+        android:id="@+id/rg_sort_options"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sort_title">
+
+        <RadioButton
+            android:id="@+id/rb_newest_saved"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:checked="true"
+            android:layoutDirection="rtl"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Terbaru Disimpan"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_oldest_saved"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:checked="false"
+            android:layoutDirection="rtl"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Terlama Disimpan"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_most_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:checked="false"
+            android:layoutDirection="rtl"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Ulasan Terbanyak"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

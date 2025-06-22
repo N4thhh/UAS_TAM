@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC800"
+    android:padding="24dp">
+
+    <!-- Logo dan teks sejajar horizontal -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="135dp"
+            android:layout_height="166dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logobangdit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BangunDIT."
+            android:textSize="25sp"
+            android:textColor="#531607"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Welcome Message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the app"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:textColor="#531607"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We’re excited to recommend you the right building tools"
+        android:textSize="16sp"
+        android:textColor="#D8531607"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:paddingHorizontal="12dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Spacer biar tombol agak ke bawah -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="130dp" />
+
+    <!-- Tombol -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@null"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingVertical="12dp" />
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp"
+        android:text="create an account"
+        android:textColor="#531607"
+        android:textStyle="bold" />
+</LinearLayout>

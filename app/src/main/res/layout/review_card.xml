@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/review_card_shadow"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/viewProfilePlaceholder"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/outline_account_circle_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Username"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/viewProfilePlaceholder"
+            app:layout_constraintTop_toTopOf="@id/viewProfilePlaceholder" />
+
+        <RatingBar
+            android:id="@+id/ratingBarUser"
+            style="?attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBarStyle"
+            app:layout_constraintStart_toStartOf="@id/textViewUsername"
+            app:layout_constraintTop_toBottomOf="@id/textViewUsername" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:id="@+id/textViewReviewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4sp"
+            android:text="Lorem ipsum dolor sit amet, conector adipiscing elit. Nunc vulpatate libero et velit interdum, ac aliquet odio mattis. Class aptent Read More" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

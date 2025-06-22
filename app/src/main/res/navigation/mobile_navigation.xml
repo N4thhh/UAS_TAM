@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.bangundit.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.bangundit.ui.search.Search1Fragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search1" >
+        <action
+            android:id="@+id/action_search1_to_search2"
+            app:destination="@id/search2Fragment" />
+        <action
+            android:id="@+id/action_search1_to_search4"
+            app:destination="@id/search4Fragment" />
+        <action
+            android:id="@+id/action_search1_to_search3"
+            app:destination="@id/search3Fragment" />
+        <action
+            android:id="@+id/action_search1_to_search5"
+            app:destination="@id/search5Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/search2Fragment"
+        android:name="com.example.bangundit.ui.search.Search2Fragment"
+        android:label="Search Results"
+        tools:layout="@layout/fragment_search2" >
+        <action
+            android:id="@+id/action_search2_to_search1"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_search2_to_search4"
+            app:destination="@id/search4Fragment" />
+        <action
+            android:id="@+id/action_search2_to_search5"
+            app:destination="@id/search5Fragment" />
+        <action
+            android:id="@+id/action_search2_to_search3"
+            app:destination="@id/search3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/search3Fragment"
+        android:name="com.example.bangundit.ui.search.Search3Fragment"
+        android:label="Perkakas"
+        tools:layout="@layout/fragment_search3" >
+        <action
+            android:id="@+id/action_search3_to_search1"
+            app:destination="@id/navigation_search"
+            app:popUpTo="@id/navigation_search"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_search3_to_search2"
+            app:destination="@id/search2Fragment"
+            app:popUpTo="@id/navigation_search"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_search3_to_search4"
+            app:destination="@id/search4Fragment"
+            app:popUpTo="@id/search4Fragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_search3_to_search5"
+            app:destination="@id/search5Fragment"
+            app:popUpTo="@id/search5Fragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/search4Fragment"
+        android:name="com.example.bangundit.ui.search.Search4Fragment"
+        android:label="Search Detail"
+        tools:layout="@layout/fragment_search4" />
+
+    <fragment
+        android:id="@+id/search5Fragment"
+        android:name="com.example.bangundit.ui.search.Search5Fragment"
+        android:label="Material"
+        tools:layout="@layout/fragment_search5" >
+        <action
+            android:id="@+id/action_search5_to_search1"
+            app:destination="@id/navigation_search"
+            app:popUpTo="@id/navigation_search"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_search5_to_search2"
+            app:destination="@id/search2Fragment"
+            app:popUpTo="@id/navigation_search"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_search5_to_search3"
+            app:destination="@id/search3Fragment"
+            app:popUpTo="@id/search3Fragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_search5_to_search4"
+            app:destination="@id/search4Fragment"
+            app:popUpTo="@id/search4Fragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_akun"
+        android:name="com.example.bangundit.ui.akun.AkunFragment"
+        android:label="Akun"
+        tools:layout="@layout/fragment_akun">
+        <action
+            android:id="@+id/action_akunFragment_to_FavoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_akunFragment_to_editprofil"
+            app:destination="@+id/editProfil" />
+        <action
+            android:id="@+id/action_akunFragment_to_pusat_bantuan"
+            app:destination="@+id/pusatBantuan" />"
+        <action
+            android:id="@+id/action_akunFragment_to_tentang_aplikasi"
+            app:destination="@+id/tentangAplikasi" />"
+        <action
+            android:id="@+id/action_akunFragment_to_ulasan_saya"
+            app:destination="@+id/ulasanSaya" />"
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfil"
+        android:name="com.example.bangundit.ui.akun.editProfilFragment"
+        android:label="Edit Profil"
+        tools:layout="@layout/fragment_edit_profil">
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.bangundit.ui.favorite.FavoriteFragment"
+        android:label="Favorit"
+        tools:layout="@layout/fragment_favorite">
+    </fragment>
+
+    <fragment
+        android:id="@+id/ulasanSaya"
+        android:name="com.example.bangundit.ui.akun.ulasanSayaFragment"
+        android:label="Ulasan Saya"
+        tools:layout="@layout/fragment_ulasan_saya">
+    </fragment>
+
+    <fragment
+        android:id="@+id/pusatBantuan"
+        android:name="com.example.bangundit.ui.akun.pusatBantuanFragment"
+        android:label="Pusat Bantuan"
+        tools:layout="@layout/fragment_pusat_bantuan">
+    </fragment>
+
+    <fragment
+        android:id="@+id/tentangAplikasi"
+        android:name="com.example.bangundit.ui.akun.tentangAplikasiFragment"
+        android:label="Tentang Aplikasi"
+        tools:layout="@layout/fragment_tentang_aplikasi">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_kategori"
+        android:name="com.example.bangundit.ui.kategori.KategoriFragment"
+        android:label="Kategori"
+        tools:layout="@layout/fragment_kategori">
+        <action
+            android:id="@+id/action_kategoriFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.bangundit.ui.detailproduk.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+
+        <action
+            android:id="@+id/action_detailFragment_to_reviewAndRatingFragment"
+            app:destination="@id/reviewAndRatingFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_informasiTokoFragment"
+            app:destination="@id/informasiTokoFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/informasiTokoFragment"
+        android:name="com.example.bangundit.ui.detailproduk.informasiTokoFragment"
+        tools:layout="@layout/fragment_informasi_toko" />
+
+    <fragment
+        android:id="@+id/reviewAndRatingFragment"
+        android:name="com.example.bangundit.ui.reviewrating.reviewAndRatingFragment"
+        tools:layout="@layout/fragment_review_and_rating">
+        <action
+            android:id="@+id/action_reviewAndRatingFragment_to_tulisulasanFragment"
+            app:destination="@id/tulisulasanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tulisulasanFragment"
+        android:name="com.example.bangundit.ui.tulisulasan.Tulis_ulasanFragment"
+        tools:layout="@layout/fragment_tulis_ulasan" />
+
+
+</navigation>

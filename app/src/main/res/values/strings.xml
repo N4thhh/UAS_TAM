@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BangunDit</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_search">Pencarian</string>
+    <string name="title_akun">Akun</string>
+    <string name="title_kategori">Kategori</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="search_pasir_desc">Lorem Ipsum</string>
+    <string name="search_semen_desc">Lorem Ipsum</string>
+    <string name="search_besi_desc">Lorem Ipsum</string>
+    <string name="search_baja_desc">Lorem Ipsum</string>
+    <string name="search_batusplit_desc">Lorem Ipsum</string>
+    <string name="search_batubata_desc">Lorem Ipsum</string>
+
+    <string name="search_cangkul_desc">Lorem Ipsum</string>
+    <string name="search_palu_desc">Lorem Ipsum</string>
+    <string name="search_paku_desc">Lorem Ipsum</string>
+    <string name="search_obeng_desc">Lorem Ipsum</string>
+    <string name="search_tang_desc">Lorem Ipsum</string>
+    <string name="search_linggis_desc">Lorem Ipsum</string>
+
+    <string name="search_ker1_desc">Lorem Ipsum</string>
+    <string name="search_ker2_desc">Lorem Ipsum</string>
+    <string name="search_ker3_desc">Lorem Ipsum</string>
+    <string name="search_ker4_desc">Lorem Ipsum</string>
+    <string name="search_ker5_desc">Lorem Ipsum</string>
+    <string name="search_ker6_desc">Lorem Ipsum</string>
+</resources>

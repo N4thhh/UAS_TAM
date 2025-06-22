@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Border kuning dengan ketebalan 2dp -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFC107" />
+
+    <!-- Background transparan -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- Corner radius untuk membuat sudut melengkung -->
+    <corners android:radius="12dp" />
+
+</shape>
